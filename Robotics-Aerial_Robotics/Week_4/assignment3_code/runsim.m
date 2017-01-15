@@ -6,8 +6,8 @@ addpath('utils');
 
 
 %% pre-calculated trajectories
-trajhandle = @traj_line;
-% trajhandle = @traj_helix;
+% trajhandle = @traj_line;
+trajhandle = @traj_helix;
 
 %% Trajectory generation with waypoints
 %% You need to implement this

@@ -30,6 +30,7 @@ function [ desired_state ] = traj_generator(t, state, waypoints)
 % should write your own trajectory generator for the submission.
 
 persistent waypoints0 traj_time d0
+nargin
 if nargin > 2
     d = waypoints(:,2:end) - waypoints(:,1:end-1);
     d0 = 2 * sqrt(d(1,:).^2 + d(2,:).^2 + d(3,:).^2);
@@ -64,5 +65,8 @@ end
 % desired_state.vel = zeros(3,1);
 % desired_state.acc = zeros(3,1);
 % desired_state.yaw = 0;
+% desired_state.yawdot = 0
+
+
 end
 
