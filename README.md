@@ -1,7 +1,7 @@
 # Robotics
 Courses by University of Pennsylvania via Coursera
 
-**Robotics**: 
+**Project List**: 
 - Aerial Robotics
   - [x] Week1   
   - [x] Week2: Quadrotor Simulator and PD Controller
