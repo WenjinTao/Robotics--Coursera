@@ -16,10 +16,23 @@ corners = zeros(4,2,size(images,1));
 img_pts = img_pts_init; % img_pts is where you will store the tracked points
 corners(:,:,1) = img_pts;
 
+% Create a point tracker and enable the bidirectional error constraint to
+% make it more robust in the presence of noise and clutter.
+pointTracker = vision.PointTracker('MaxBidirectionalError', 2);
+
+% Initialize the tracker with the initial point locations and the initial
+% image.
+img_init = images{1};
+initialize(pointTracker, img_pts, img_init);
+
 % Iterate through the rest of the images
 for i = 2:size(images,1)
     %%%% CODE FOR TRACKING HERE %%%%
     % Store corners and visualize results (if desired)
+    
+    % Track the points
+    [img_pts, isFound] = step(pointTracker, images{i});
+    
     corners(:,:,i) = img_pts;
 end
 
