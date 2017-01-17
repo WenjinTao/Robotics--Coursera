@@ -15,7 +15,7 @@ Courses by University of Pennsylvania via Coursera
 - Perception
   - [x] Week1: Dolly Zoom   
   - [x] Week2: Image Projection
-  - [ ] Week3: Image Projection - A simple augmented reality application
+  - [x] Week3: Image Projection - A simple augmented reality application
   - [ ] Week4: Structure from Motion
 - Mobility
   - [ ] Week1   
