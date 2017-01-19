@@ -6,7 +6,7 @@ Courses by University of Pennsylvania via Coursera
   - [x] Week1   
   - [x] Week2: Quadrotor Simulator and PD Controller
   - [x] Week3: Quadrotor Control in the Plane 
-  - [ ] Week4: 3D Controller and Trajectory Generation
+  - [x] Week4: 3D Controller and Trajectory Generation
 - Estimation and Learning
   - [x] Week1: Color Learning and Target Detection   
   - [x] Week2: Kalman Filter - Target Tracking
