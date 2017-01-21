@@ -11,7 +11,9 @@ Courses by University of Pennsylvania via Coursera
   - [x] Week1: Color Learning and Target Detection   
   - [x] Week2: Kalman Filter - Target Tracking
   - [x] Week3: Occupancy Grid Mapping
-  ![myMap](/images/logo.png)
+  
+  ![myMap](/Robotics-Estimation_and_Learning/Week_3/AssignmentWEEK3/myMap.png)
+  
   - [ ] Week4: Particle Filter - Pose Tracking
 - Perception
   - [x] Week1: Dolly Zoom   
