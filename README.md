@@ -2,7 +2,7 @@
 Courses by University of Pennsylvania via Coursera
 
 **Project List**: 
-- Aerial Robotics
+- **Aerial Robotics**
   - [x] Week1   
   - [x] Week2: Quadrotor Simulator and PD Controller
   - [x] Week3: Quadrotor Control in the Plane 
@@ -15,17 +15,17 @@ Courses by University of Pennsylvania via Coursera
   ![myMap](/Robotics-Estimation_and_Learning/Week_3/AssignmentWEEK3/myMap.png)
   
   - [ ] Week4: Particle Filter - Pose Tracking
-- Perception
+- **Perception**
   - [x] Week1: Dolly Zoom   
   - [x] Week2: Image Projection
   - [x] Week3: Image Projection - A simple augmented reality application
   - [ ] Week4: Structure from Motion
-- Mobility
+- **Mobility**
   - [ ] Week1   
   - [ ] Week2
   - [ ] Week3 
   - [ ] Week4
-- Computational Motion Planning
+- **Computational Motion Planning**
   - [ ] Week1   
   - [ ] Week2
   - [ ] Week3 
