@@ -111,10 +111,62 @@ while true
     % entries in the map, f, g and parent arrays
     %
     
+    % North cell
+    if (i>1 && i<=nrows)
+        i_nb = i-1;   % Row index of the neighbor cell
+        j_nb = j;   % Column index of the neighbor cell
+        if (map(i_nb,j_nb)~=2 && map(i_nb,j_nb)~=3 && map(i_nb,j_nb)~=5)
+            if g(i_nb,j_nb) > (g(i,j) + (H(i_nb,j_nb)-H(i,j)))
+                g(i_nb,j_nb) = g(i,j) + (H(i_nb,j_nb)-H(i,j));
+                f(i_nb,j_nb) = g(i_nb,j_nb) + H(i_nb,j_nb);
+                map(i_nb,j_nb) = 4;   % Marked as On-List
+                parent(i_nb,j_nb) = current;
+            end
+        end
+    end
+    % South cell
+    if (i>=1 && i<nrows)
+        i_nb = i+1;   % Row index of the neighbor cell
+        j_nb = j;   % Column index of the neighbor cell
+        if (map(i_nb,j_nb)~=2 && map(i_nb,j_nb)~=3 && map(i_nb,j_nb)~=5)
+            if g(i_nb,j_nb) > (g(i,j) + (H(i_nb,j_nb)-H(i,j)))
+                g(i_nb,j_nb) = g(i,j) + (H(i_nb,j_nb)-H(i,j));
+                f(i_nb,j_nb) = g(i_nb,j_nb) + H(i_nb,j_nb);
+                map(i_nb,j_nb) = 4;   % Marked as On-List
+                parent(i_nb,j_nb) = current;
+            end
+        end
+    end
+    % West cell
+    if (j>1 && j<=ncols)
+        j_nb = j-1;   % Row index of the neighbor cell
+        i_nb = i;   % Column index of the neighbor cell
+        if (map(i_nb,j_nb)~=2 && map(i_nb,j_nb)~=3 && map(i_nb,j_nb)~=5)
+            if g(i_nb,j_nb) > (g(i,j) + (H(i_nb,j_nb)-H(i,j)))
+                g(i_nb,j_nb) = g(i,j) + (H(i_nb,j_nb)-H(i,j));
+                f(i_nb,j_nb) = g(i_nb,j_nb) + H(i_nb,j_nb);
+                map(i_nb,j_nb) = 4;   % Marked as On-List
+                parent(i_nb,j_nb) = current;
+            end
+        end
+    end
+    % East cell
+    if (j>=1 && j<ncols)
+        j_nb =j+1;   % Row index of the neighbor cell
+        i_nb = i;   % Column index of the neighbor cell
+        if (map(i_nb,j_nb)~=2 && map(i_nb,j_nb)~=3 && map(i_nb,j_nb)~=5)
+            if g(i_nb,j_nb) > (g(i,j) + (H(i_nb,j_nb)-H(i,j)))
+                g(i_nb,j_nb) = g(i,j) + (H(i_nb,j_nb)-H(i,j));
+                f(i_nb,j_nb) = g(i_nb,j_nb) + H(i_nb,j_nb);
+                map(i_nb,j_nb) = 4;   % Marked as On-List
+                parent(i_nb,j_nb) = current;
+            end
+        end
+    end
     
-    
-    
-    
+    % Update the number of nodes expanded
+    numExpanded = numExpanded + 1;
+
     %*********************************************************************
     
     

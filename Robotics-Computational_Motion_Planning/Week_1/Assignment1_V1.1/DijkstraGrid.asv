@@ -97,50 +97,9 @@ while true
     % Visit each neighbor of the current node and update the map, distances
     % and parent tables appropriately.
     
-    % North cell
-    if (i>1 && i<=nrows)
-        i_nb = i-1;   % Row index of the neighbor cell
-        j_nb = j;   % Column index of the neighbor cell
-        if (map(i_nb,j_nb)~=2 && map(i_nb,j_nb)~=3 && map(i_nb,j_nb)~=5)
-            map(i_nb,j_nb) = 4; % Marked as On-List
-            parent(i_nb,j_nb) = current;
-            distanceFromStart(i_nb,j_nb) = min_dist+1;
-        end
-    end
-    % South cell
-    if (i>=1 && i<nrows)
-        i_nb = i+1;
-        j_nb = j;
-        if (map(i_nb,j_nb)~=2 && map(i_nb,j_nb)~=3 && map(i_nb,j_nb)~=5)
-            map(i_nb,j_nb) = 4; % Marked as On-List
-            parent(i_nb,j_nb) = current;
-            distanceFromStart(i_nb,j_nb) = min_dist+1;
-        end
-    end
-    % West cell
-    if (j>1 && j<=ncols)
-        j_nb = j-1;
-        i_nb = i;
-        if (map(i_nb,j_nb)~=2 && map(i_nb,j_nb)~=3 && map(i_nb,j_nb)~=5)
-            map(i_nb,j_nb) = 4; % Marked as On-List
-            parent(i_nb,j_nb) = current;
-            distanceFromStart(i_nb,j_nb) = min_dist+1;
-        end
-    end
-    % East cell
-    if (j>=1 && j<ncols)
-        j_nb =j+1;
-        i_nb = i;
-        if (map(i_nb,j_nb)~=2 && map(i_nb,j_nb)~=3 && map(i_nb,j_nb)~=5)
-            map(i_nb,j_nb) = 4; % Marked as On-List
-            parent(i_nb,j_nb) = current;
-            distanceFromStart(i_nb,j_nb) = min_dist+1;
-        end
-    end
     
-    % Update the number of nodes expanded
-    numExpanded = numExpanded + 1;
-
+    
+    
     %*********************************************************************
 
 end

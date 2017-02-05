@@ -21,12 +21,12 @@ Courses by University of Pennsylvania via Coursera
   - [x] Week3: Image Projection - A simple augmented reality application
   - [x] Week4: Structure from Motion
 - **Mobility**
-  - [ ] Week1   
-  - [ ] Week2
+  - [x] Week1   
+  - [x] Week2
   - [ ] Week3 
   - [ ] Week4
 - **Computational Motion Planning**
-  - [ ] Week1   
+  - [x] Week1   
   - [ ] Week2
   - [ ] Week3 
   - [ ] Week4
